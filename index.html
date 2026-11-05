@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Global Knot Malaysia Sdn Bhd — Preview</title>
+<style>
+:root{--navy:#0b1f3a;--teal:#0d9488;--teal2:#14b8a6;--bg:#f8fafc;--card:#fff;--muted:#64748b;--line:#e2e8f0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--navy);line-height:1.5}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.banner{background:#fef3c7;color:#92400e;text-align:center;padding:8px 16px;font-size:13px;border-bottom:1px solid #fde68a}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line);background:#fff}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
+.logo-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--navy),var(--teal));display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800}
+.nav-links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--navy)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;border:none;cursor:pointer}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:var(--teal2)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--navy)}
+.hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;padding:56px 0 40px}
+.hero h1{font-size:44px;line-height:1.15;letter-spacing:-0.02em;margin-bottom:14px}
+.hero p{color:var(--muted);font-size:17px;margin-bottom:24px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.city{background:linear-gradient(160deg,#0b1f3a,#134e4a);border-radius:20px;min-height:320px;position:relative;overflow:hidden;box-shadow:0 20px 50px rgba(11,31,58,.25)}
+.city::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(20,184,166,.35),transparent 50%),radial-gradient(circle at 30% 80%,rgba(59,130,246,.25),transparent 45%)}
+.city-inner{position:relative;padding:28px;color:#fff;height:100%;display:flex;flex-direction:column;justify-content:flex-end}
+.city-label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
+.city-title{font-size:22px;font-weight:700}
+.city-bots{display:flex;gap:8px;margin-top:14px}
+.bot{background:rgba(255,255,255,.12);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:8px 12px;font-size:12px}
+.section{padding:20px 0 60px}
+.section h2{font-size:22px;margin-bottom:6px}
+.section .sub{color:var(--muted);margin-bottom:22px;font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card.featured{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal)}
+.card h3{font-size:16px}
+.price{font-size:28px;font-weight:800;letter-spacing:-.02em}
+.price span{font-size:13px;font-weight:500;color:var(--muted)}
+.card ul{list-style:none;color:var(--muted);font-size:13px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card ul li::before{content:"✓ ";color:var(--teal);font-weight:700}
+.footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between}
+@media (max-width:800px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.nav-links{display:none}.hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="banner">Preview only — not live. Global Knot Malaysia Sdn Bhd · Cloudflare Workers draft</div>
+<nav>
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+    <div class="logo"><div class="logo-mark">GK</div>Global Knot Malaysia Sdn Bhd</div>
+    <div class="nav-links">
+      <a href="#">Home</a><a href="#services">Services</a><a href="#city">AI City</a><a href="#">About</a><a href="#">Contact</a>
+    </div>
+    <div class="nav-right">
+      <span class="lang">EN / 中文</span>
+      <a class="btn btn-navy" href="#">Book a call</a>
+    </div>
+  </div>
+</nav>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>AI that runs your busy work</h1>
+      <p>Done-for-you AI agents for Malaysian SMEs and Chinese firms expanding via Malaysia. Two-week Starter pilot from RM 6,050.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#">Start a 2-week pilot →</a>
+        <a class="btn btn-ghost" href="#city">See AI City</a>
+      </div>
+    </div>
+    <div class="city" id="city">
+      <div class="city-inner">
+        <div class="city-label">Operating surface</div>
+        <div class="city-title">Your AI City</div>
+        <div class="city-bots">
+          <div class="bot">COS · orchestrates</div>
+          <div class="bot">Research</div>
+          <div class="bot">Dev</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="services">
+    <h2>Packages</h2>
+    <p class="sub">Simple pricing. Fast results. Client pays the monthly AI running cost.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Starter</h3>
+        <div class="price">RM 6,050 <span>/ 2-week pilot</span></div>
+        <ul>
+          <li>One repeatable process</li>
+          <li>One working result</li>
+          <li>50% on signing, 50% on handover</li>
+          <li>Adoption check-in after week 1</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">Start Starter</a>
+      </div>
+      <div class="card featured">
+        <h3>Standard</h3>
+        <div class="price">RM 15–30k <span>/ stage 2</span></div>
+        <ul>
+          <li>Quoted after the pilot</li>
+          <li>More processes and agents</li>
+          <li>Custom handover and training</li>
+          <li>Priority support</li>
+        </ul>
+        <a class="btn btn-primary" href="#">Talk to us</a>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>Dedicated AI City workspace</li>
+          <li>Security and compliance</li>
+          <li>Ongoing optimisation</li>
+          <li>SLA</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">Contact sales</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap footer">
+  <span>© 2026 Global Knot Malaysia Sdn Bhd · Preview draft</span>
+  <span>Not a live offer. Numbers are estimates.</span>
+</footer>
+</body>
+</html>
